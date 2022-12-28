@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project 4 - magic ball</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Magic 8ball</h1>
+            <h2>Zadaj pytanie, kliknij bilę i poznaj prawdę!</h2>
+            <div id="photo-div">
+                <img src="photo.png" alt="magic 8ball" id="photo" />
+            </div>
+            <label id="question-label" for="question-input"
+                >Zadaj pytanie:</label
+            >
+            <input
+                type="text"
+                name=""
+                id="question-input"
+                placeholder="Zadaj pytanie"
+            />
+            <div class="answer-area">
+                <p class="error">Przykładowy błąd</p>
+                <p class="answer-line">
+                    <b>Odpowiedź: </b><span id="answer-value"></span>
+                </p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

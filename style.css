@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to left top,
+        rgb(4, 0, 255) 0%,
+        rgba(148, 216, 233, 1) 100%
+    );
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #fff; */
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#photo:hover {
+    cursor: pointer;
+}
+
+.animation-shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(30px, 0px) rotate(0deg);
+    }
+    40% {
+        transform: translate(-30px, 0px) rotate(0deg);
+    }
+    60% {
+        transform: translate(30px, 0px) rotate(0deg);
+    }
+    800% {
+        transform: translate(30px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+/* @keyframes shake {
+    0% {
+        transform: translate(5px, 5px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-5px, -10px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-15px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(15px, 10px) rotate(0deg);
+    }
+    40% {
+        transform: translate(5px, -5px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-5px, 10px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-15px, 5px) rotate(0deg);
+    }
+    70% {
+        transform: translate(15px, 5px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-5px, -5px) rotate(1deg);
+    }
+    90% {
+        transform: translate(5px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(5x, -2px) rotate(-1deg);
+    } 
+}*/
+
+#question-label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#question-input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 0 7px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+#answer-area {
+    text-align: center;
+}
+
+.error {
+    text-align: left;
+    display: none;
+    color: orange;
+    font-weight: 700;
+}
+
+.answer-line {
+    text-align: left;
+    display: none;
+    color: aqua;
+    font-weight: 700;
+}
